@@ -1,13 +1,14 @@
-import org.junit.jupiter.api.Assertions;
-//import org.testng.annotations.Test;
+package ru.netology.statistic;
+
 import org.junit.jupiter.api.Test;
-import ru.netology.statistic.StatisticsService;
+
+import org.junit.jupiter.api.Assertions;
 
 
 public class StatisticsServiceTest {
 
     @Test
-    public void findMax() {
+    void findMax() {
         StatisticsService service = new StatisticsService();
 
         long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 8, 6, 11, 11, 12};
@@ -19,7 +20,7 @@ public class StatisticsServiceTest {
     }
 
     @Test
-    public void findMaxMiddle() {
+    void findMaxMiddle() {
         StatisticsService service = new StatisticsService();
 
         long[] incomesInBillions = {5, 8, 4, 5, 6, 3, 8, 6, 11, 11, 15};
